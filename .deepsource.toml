@@ -1,0 +1,25 @@
+version = 1
+
+test_patterns = ["/tests/**"]
+
+exclude_patterns = [
+    "/build/**",
+    "/coverage/**",
+    "/docs/**",
+    "/jsdoc/**",
+    "/templates/**",
+    "/tests/bench/**",
+    "/tests/fixtures/**",
+    "/tests/performance/**",
+    "/tmp/**",
+    "/tools/internal-rules/node_modules/**",
+    "test.js",
+    "!.eslintrc.js"
+]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  runtime_env = ["node"]
